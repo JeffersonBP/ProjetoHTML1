@@ -1,0 +1,163 @@
+*{
+    padding: 0;    /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left ).*/
+    margin: 0;     /*A propriedade margin do CSS define a área de margem nos quatro lados do elemento. É uma abreviação que define todas as margens individuais de uma só vez: margin-top , margin-right (en-US), margin-bottom , e margin-left (en-US */
+    box-sizing: border-box; /* A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos.*/
+    text-decoration: none; /*A propriedade text-decoration do CSS é usada para definir a formatação de  underline, overline, line-through ou blink. As decorações underline e overline são posicionadas abaixo e acima do texto (respectivamente), e line-through cortando-o.*/
+    font-family: sans-serif; /*A propriedade font-family do CSS permite que se faça uma lista de prioridades de familias de fontes e/ou nomes genéricos de famílias a serem especificados para um elemento selecionado. ... A seleção de fontes não para simplesmente na primeira fonte nomeada na lista que está no sistema do usuário.*/
+    font-size: 14px;         /*A propriedade font-size é usada para indicar o tamanho da letra(fonte) em CSS. ... Este tamanho poderá ser especificado em várias unidades de medidas. Normalmente as unidades de medidas são relativas, como pixel e porcentagem e absolutas, como point e centímetros.*/
+}
+
+body{                       /*O body é o elemento no nosso documento responsável por ser o container de tudo que é conteúdo do site. Diferente do <head>, oque está dentro do <body> é oque fica/ou ficará disponível para visualização do visitante. As informações que queremos transmitir. Títulos, Textos, Imagens..*/
+    width: 100%;            /*A propriedade CSS width determina a largura da área de conteúdo de um elemento. A área de conteúdo fica dentro do preenchimento, da borda, e da margem de um elemento. As propriedades min-width (en-US) e max-width sobrescrevem o width.*/
+    min-height: 100vh;
+    background-color: lightgray; /*A propriedade CSS background é um atalho para definir os valores de fundo individuais em um único lugar na folha de estilo. Background pode ser usado para definir os valores para um ou mais dos seguintes: background-clip, background-color, background-image (en-US), background-origin, background-position , background-repeat (en-US), background-size e background-attachment.*/
+    margin: 0;
+    padding: 0;
+    display: flex;           /*A propriedade CSS  display especifica o tipo de caixa de renderização usada por um elemento. No HTML, os valores padrões da propriedade  display são feitas a partir do comportamento descrito nas especificações HTML ou da folha de estilo padrão do navegador/usuário. O valor padrão em XML é inline.*/       
+    justify-content: center; /*Uma das razões pela qual flexbox rapidamente despertou interesse dos desenvolvedores web é que ela trouxe capacidade de alinhamento apropriada para web pela primeira vez. Tem capacidade de alinhamento vertical apropriada, e assim finalmente podemos de modo fácil centralizar uma caixa. Neste guia, veremos detalhadamente como as propriedades de alinhamento e justificação funcionam no Flexbox.
+Para centralizar nossa caixa nós usamos a propriedade align-items para alinhar nosso item no eixo transversal, que neste caso é o eixo do bloco indo verticalmente. Nós usamos justify-content para alinhar o item no eixo principal, que neste caso é o eixo indo horizontalmente.*/
+}
+.instagram-warpper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.Instagran-phonne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    overflow: hidden;  /*Para imagem não passar o tamanho para fora */
+    border-radius: 5%;
+}
+.Instagran-phonne img{
+    height: 50rem;
+
+}
+
+.Instagram-continue{
+    display: flex;
+    align-items: center;            /*Esta na horinzontal devido a propriedade abaixo*/   
+    justify-content: space-around; /*Devido a flex-direction column esta na VERTICAL*/
+    flex-direction: column;       /*Estamos mudando o eixo para coluna setando essa propriedade*/
+    width: 50%;
+    min-height: 34rem;
+    
+}
+}
+.Instagram-continue img{
+    height: 50rem;
+
+}
+.grupo {
+    display: flex;
+    justify-content: space-between;  /*A propriedade justify-content Usa o espaço disponível na linha para posicionar itens flexíveis. Com justify-content: space-between , Todo o espaço disponível é colocado entre o primeiro e o último item, empurrando os dois itens para as bordas opostas do contêiner.*/
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 01rem;
+    border: 14px solid lightgray;
+}
+ .grupo:nth-child(1) {
+     min-height: 19rem;
+ }
+
+ .Instagram-logo {
+     height: 3rem; 
+ }
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;  /*Para imagem não passar o tamanho para fora */
+     
+}
+
+.profile-photo img {
+    height: 6rem;
+    }
+.Instagram-login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+
+}
+.instagram-logout {
+    background-color: #ffffff;
+    color:  #0095f6;
+    margin-top: 1rem;
+}
+.not-account{
+    color: rgb(160,160,160);
+}
+.link-blue{
+    color: #0095f6; 
+}
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.dowload{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.app-dowload{
+    height: 4rem;
+    width: 10rem;
+    background-size: cover;
+     
+}
+
+
+.app-dowload:nth-child(1){
+    background-image: url(./aplleintagram.PNG);
+}
+
+.app-dowload:nth-child(2){
+    background-image: url(./googleplay\ instagram.PNG);
+}
+
+/* Media Queries*/
+
+@media (max-width: 1024px){
+    .instagram-warpper{
+        width: 90%;
+    }
+}
+@media (max-width:650px){
+    body{
+        border: #ffffff;
+    }
+    .instagram-warpper{
+        width: 90%;
+    }
+    .Instagran-phonne{
+        display: none;
+    }
+    .Instagram-continue{
+        width: 100%;
+    }
+    .grupo{
+        border: 1px solid transparent;
+    }
+}
+
+
+
+
+
+
+
+
